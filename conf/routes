@@ -1,0 +1,23 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+module:testrunner
+
+GET     /                                       App.Index
+
+# Ignore favicon requests
+GET     /favicon.ico                            404
+
+# Only idempotent methods on base doctype.
+GET      /doc              Doc.Index
+GET      /doc/doc_id       Doc.Show
+
+GET      /text              Text.Index
+POST     /text              Text.Create
+GET      /text/doc_id       Text.Show
+PUT      /text/doc_id       Text.Update
+DELETE   /text/doc_id       Text.Destroy
+
+# Catch all
+*       /:controller/:action                    :controller.:action
