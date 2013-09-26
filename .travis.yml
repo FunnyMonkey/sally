@@ -7,6 +7,8 @@ install:
   - go get -v github.com/robfig/revel/harness
   - go get -v github.com/coopernurse/gorp
   - go get -v code.google.com/p/go.crypto/bcrypt
+  - go get -v labix.org/v2/mgo
+  - go get -v labix.org/v2/mgo/bson
   - go get github.com/jgraham909/revmgo
 
 script:
