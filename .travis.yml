@@ -13,7 +13,6 @@ install:
 
 script:
   - go test github.com/robfig/revel
-  - go test github.com/robfig/revel/cache
   - go test github.com/robfig/revel/harness
 
   # Build & run the sample apps
