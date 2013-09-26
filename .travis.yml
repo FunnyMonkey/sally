@@ -7,7 +7,6 @@ install:
   - go get -v github.com/robfig/revel/harness
   - go get -v github.com/coopernurse/gorp
   - go get -v code.google.com/p/go.crypto/bcrypt
-  - go get github.com/FunnyMonkey/sally
 
 script:
   - go test github.com/robfig/revel
