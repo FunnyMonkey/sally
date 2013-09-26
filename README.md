@@ -37,3 +37,5 @@ curl -H "Accept: text/plain" 127.0.0.1:9000/doc
 curl -H "Accept: text/html" 127.0.0.1:9000/doc
 curl -H "Accept: application/json" 127.0.0.1:9000/doc
 ````
+
+[![Build Status](https://secure.travis-ci.org/FunnyMonkey/sally.png?branch=master)](http://travis-ci.org/FunnyMonkey/sally)
