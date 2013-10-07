@@ -27,3 +27,11 @@ func (c Doc) Update() revel.Result {
 func (c Doc) Destroy() revel.Result {
 	return c.Render()
 }
+
+func (c Doc) Copy() revel.Result {
+	return c.Render()
+}
+
+// Doc routes will just redirect to the corresponding type/:id path.
+// This way we can have generic doc routes. Additionally docs will be stored in
+// both the doctype
