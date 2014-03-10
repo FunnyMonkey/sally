@@ -3,8 +3,9 @@ go: 1.1
 install:
   - export PATH=$PATH:$HOME/gopath/bin
   # Annoyingly, we can not use go get revel/... because references to app/routes package fail
-  - go get -v github.com/robfig/revel/revel
-  - go get -v github.com/robfig/revel/harness
+  - go get -v github.com/revel/revel
+  - go get -v github.com/revel/cmd/revel
+  - go get -v github.com/revel/revel/harness
   - go get -v github.com/coopernurse/gorp
   - go get -v code.google.com/p/go.crypto/bcrypt
   - go get -v labix.org/v2/mgo
@@ -12,8 +13,8 @@ install:
   - go get github.com/jgraham909/revmgo
 
 script:
-  - go test github.com/robfig/revel
-  - go test github.com/robfig/revel/harness
+  - go test github.com/revel/revel
+  - go test github.com/revel/revel/harness
 
   # Build & run the sample apps
   - revel test github.com/FunnyMonkey/sally

@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"github.com/jgraham909/revmgo"
-	"github.com/robfig/revel"
+	"github.com/revel/revel"
 )
 
 type App struct {
